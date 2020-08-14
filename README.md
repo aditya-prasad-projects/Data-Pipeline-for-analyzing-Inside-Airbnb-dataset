@@ -1,10 +1,10 @@
 ## Project: Data Pipeline for analyzing Inside Airbnb’s dataset
-###Project Description: 
+**Project Description:** 
 InsideAirbnb has a rich dataset of Airbnb listings, with which it has tried to help communities around the world from 2015. Beginning from this report http://insideairbnb.com/how-airbnb-hid-the-facts-in-nyc/ which exposed how the Airbnb released data misled the media and the public, to this Jersey City report, http://insideairbnb.com/inside-jersey-city/, which was instrumental in regulating short term rentals in Jersey City in 2019.
 
 With this community project, I hope to make it easier to get and analyse Airbnb listings for communities all over the world in a scalable and cost-effective manner with the help of Apache Airflow, Amazon S3, S3 Select, BeautifulSoup, Apache Spark, Amazon EMR, Amazon Redshift and Amazon Athena.
 
-###Data Pipeline design:
+**Data Pipeline design:**
 At a high-level the pipeline does the following tasks.
 1. Scrape InsideAirbnb's website to get the URL of all the csv files, and dump it into a file on S3.
 2. Based on User's Preference gotten from Airflow variables, transfer either the summary or detailed csv files to an S3 bucket directly, without writing anything locally.
