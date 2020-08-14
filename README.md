@@ -27,7 +27,7 @@ It contains data for various communities across the world, ranging from Australi
 
 All the communities contain the same fields. Below you can find an example for the Hong Kong community
 
-![community_data_description](images/community_data_description.png)
+![community_data_description](airflow/images/community_data_description.png)
 
 
 **Design Goals**:
@@ -37,10 +37,10 @@ All the communities contain the same fields. Below you can find an example for t
 **Current Framework**
 Currently I have designed and implmented the data transfer subdag, that loads data from the url file in S3 bucket, and unzips it and creates a data lake on S3.
 
-![dag](images/dag.png)
+![dag](airflow/images/dag.png)
 >Current Dag Structure
 
-![data_transfer_subdag](images/data_transfer_subdag.png)
+![data_transfer_subdag](airflow/images/data_transfer_subdag.png)
 >Data Transfer Subdag
 **Pipeline Implementation**:
 
